@@ -2,7 +2,7 @@
 """
 Created on Sat Jan 13 15:48:15 2024
 
-@author: deji
+@author: busola
 """
 
 import pandas as pd
@@ -90,25 +90,3 @@ from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test,predict)
 
 
-# x = data[]
-# num_one_targets = int(np.sum(targets_all))
-
-# # Set a counter for targets that are 0 (meaning that the customer did not convert)
-# zero_targets_counter = 0
-
-# # We want to create a "balanced" dataset, so we will have to remove some input/target pairs.
-# # Declare a variable that will do that:
-# indices_to_remove = []
-
-# # Count the number of targets that are 0. 
-# # Once there are as many 0s as 1s, mark entries where the target is 0.
-# for i in range(targets_all.shape[0]):
-#     if targets_all[i] == 0:
-#         zero_targets_counter += 1
-#         if zero_targets_counter > num_one_targets:
-#             indices_to_remove.append(i)
-
-# # Create two new variables, one that will contain the inputs, and one that will contain the targets.
-# # We delete all indices that we marked "to remove" in the loop above.
-# unscaled_inputs_equal_priors = np.delete(unscaled_inputs_all, indices_to_remove, axis=0)
-# targets_equal_priors = np.delete(targets_all, indices_to_remove, axis=0)
